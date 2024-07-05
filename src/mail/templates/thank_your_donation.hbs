@@ -1,0 +1,368 @@
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <title>Meththa Foundation - Your Receipt</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: #5b5b5b !important;
+    }
+
+    strong {
+      color: #5b5b5b !important;
+    }
+
+    table {
+      color: #5b5b5b !important;
+    }
+
+    td {
+      color: #5b5b5b !important;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .container {
+      max-width: 500px;
+      height: auto;
+      padding: 30px 40px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .logo-background {
+
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .logo {
+      max-width: 250px;
+    }
+
+    .text-area {
+      text-align: left;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .sub-title {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .description {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .support {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .support-link {
+      color: #f2c862;
+    }
+
+    .devider {
+      border-bottom: 0.01px solid #5b5b5b;
+      margin: 30px 0;
+    }
+
+    .icons-image {
+      display: block;
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      height:
+        32px;
+      width: 32px;
+      margin: 0 5px;
+    }
+
+    .copyrights {
+      font-size: 16px;
+    }
+
+    .im {
+      color: #5b5b5b !important;
+    }
+
+    span {
+      color: #5b5b5b !important;
+    }
+
+    .payment-details {
+      font-size: 16px;
+      color: #5b5b5b !important;
+    }
+
+    @media (max-width: 850px) {
+      .container {
+        padding: 25px 35px;
+      }
+
+      .logo {
+        max-width: 150px;
+      }
+
+      .logo-background {
+        padding-bottom: 0px;
+      }
+
+      .title {
+        font-size: 17px;
+      }
+
+      .payment-details {
+        font-size: 15px;
+      }
+
+      .sub-title {
+        font-size: 15px;
+      }
+
+
+
+      .description {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 20px 25px;
+      }
+
+      .logo {
+        max-width:
+          150px;
+      }
+
+      .logo-background {
+        padding-bottom: 0px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+
+      .payment-details {
+        font-size: 14px;
+      }
+
+      .sub-title {
+        font-size: 14px;
+      }
+
+      .copyrights {
+        font-size: 14px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      .container {
+        padding: 15px 20px;
+      }
+
+      .logo {
+        max-width:
+          100px;
+      }
+
+      .logo-background {
+        padding-bottom: 0px;
+      }
+
+      .title {
+        font-size: 15px;
+      }
+
+      .payment-details {
+        font-size: 13px;
+      }
+
+      .sub-title {
+        font-size: 13px;
+      }
+
+
+
+      .description {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body style='color: #5b5b5b'>
+  <div class='wrapper'>
+    <div class='container' style='color: #5b5b5b; '>
+      <table width='100%' cellpadding='0' cellspacing='0' role='presentation' style='margin: 0'>
+        <tr>
+          <td align='center'>
+            <div class='logo-container'>
+              <div class='logo-background'>
+                <img class='logo'
+                  src='https://www.meththafoundation.org.uk/wp-content/uploads/2021/04/Meththa-Logo-revised-180x180.png'
+                  alt='Meththa-Foundation' />
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class='text-area'>
+        <h2 class='title' style='color: #5b5b5b ; text-align: center'>
+          Thank you for your donation
+
+        </h2>
+        <p class='sub-title' style='color: #5b5b5b'>
+          Dear
+          {{first_name}}
+          {{last_name}},
+        </p>
+        <p class='description' style='color: #5b5b5b'>
+          <span class='description' style='color: #5b5b5b'>Thank you for your donation to Meththa Foundation.
+            It makes a difference for those in our community.</span>
+
+          <br />
+          <br />
+
+        <h3 style="color: #5b5b5b; font-size: 20px;">Donation Information</h3>
+
+        <div class='devider'></div>
+        <table style='width: 100%; border-collapse: collapse; color: #5b5b5b;'>
+          <tr>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; text-align: left; padding: 8px;'>
+              <strong>Receipt Number :</strong>
+            </td>
+            <td class='payment-details'
+              style='color: #5b5b5b; width: 50%; padding: 8px; text-align: left; word-break: break-all;'>
+              {{payment_id}}
+            </td>
+          </tr>
+          <tr>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; text-align: left; padding: 8px;'>
+              <strong>Donation Date :</strong>
+            </td>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; padding: 8px; text-align: left;'>
+              {{donation_date}}
+            </td>
+          </tr>
+          <tr>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; text-align: left; padding: 8px;'>
+              <strong>Donation Campaign :</strong>
+            </td>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; padding: 8px; text-align: left;'>
+              {{campaign_title}}
+            </td>
+          </tr>
+          <tr>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; text-align: left; padding: 8px;'>
+              <strong>Payment method :</strong>
+            </td>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; padding: 8px; text-align: left;'>
+
+              {{payment_method}}
+            </td>
+          </tr>
+          <tr>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; text-align: left; padding: 8px;'>
+              <strong>Amount : </strong>
+
+            </td>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; padding: 8px; text-align: left;'>
+
+              {{amount}}
+            </td>
+          </tr>
+          <tr>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; text-align: left; padding: 8px;'>
+              <strong>Donation Type : </strong>
+
+            </td>
+            <td class='payment-details' style='color: #5b5b5b; width: 50%; padding: 8px; text-align: left;'>
+              {{donation_type}}
+            </td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <span class='description' style='color: #5b5b5b'>
+          If you have any questions on this transaction, please
+          <a style='color: #5b5b5b' class='support-link' href='mailto:meththafoundationmaho@gmail.com'>contact
+            us.</a>.</span>
+        </p>
+        <br />
+      </div>
+
+    </div>
+    <div style="background: #F2F0EC; padding: 20px 0px" ; class='container'>
+      <h2 style='color: #5b5b5b; text-align: center; margin-top: 0px' class='copyrights'>
+        Follow us
+      </h2>
+      <table align="center" cellpadding='0' cellspacing='0' role='presentation'>
+        <tr>
+          <td>
+            <a href=' https://twitter.com/coinbureau' target='_blank'>
+              <img title="X.com"
+                src="https://fbtbrup.stripocdn.email/content/assets/img/social-icons/circle-black/x-circle-black.png"
+                alt="X" width="32" height="32" class='icons-image' />
+            </a>
+          </td>
+          <td>
+            <a href='https://www.youtube.com/channel/UCqK_GSMbpiV8spgD3ZGloSw' target='_blank'>
+              <img title="Facebook"
+                src="https://fbtbrup.stripocdn.email/content/assets/img/social-icons/circle-black/facebook-circle-black.png"
+                alt="Fb" width="32" height="32" class='icons-image' />
+            </a>
+          </td>
+          <td>
+            <a href='https://www.linkedin.com/company/coin-bureau' target='_blank'>
+              <img title="Linkedin"
+                src="https://fbtbrup.stripocdn.email/content/assets/img/social-icons/circle-black/linkedin-circle-black.png"
+                alt="In" width="32" height="32" class='icons-image' />
+            </a>
+          </td>
+        </tr>
+
+      </table>
+      <br>
+      <table cellpadding='0' cellspacing='0' role='presentation' style='margin: 0 auto; width: 100%; '>
+        <tr cellpadding="0" cellspacing="0" role="presentation" style=" margin: 0 auto; text-align: center">
+          <td colspan="3" style=" margin: 0 ">
+            <p style="margin: 0; color: #5b5b5b; font-size: 14px; ">meththafoundationmaho@gmail.com</p>
+          </td>
+        </tr>
+        <tr cellpadding="0" cellspacing="0" role="presentation" style=" margin: 0 auto; text-align: center">
+          <td colspan="3" style=" margin: 0 ">
+            <p style="margin: 0;color: #5b5b5b; font-size: 14px; ">+94 (0)37 361 8170</p>
+          </td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
